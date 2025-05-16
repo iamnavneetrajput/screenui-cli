@@ -1,0 +1,38 @@
+{
+  "name": "screenui-cli",
+  "version": "0.1.0",
+  "description": "CLI tool for generating Tailwind-based React components",
+  "main": "dist/index.js",
+  "bin": {
+    "screenui": "./bin/screenui.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./bin/screenui.js",
+    "dev": "ts-node src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "tailwind",
+    "components",
+    "ui",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^9.4.1",
+    "fs-extra": "^11.1.0",
+    "ora": "^5.4.1",
+    "ts-morph": "^16.0.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.26",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  }
+}
